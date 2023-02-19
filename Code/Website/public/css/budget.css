@@ -1,0 +1,602 @@
+/* setting the margin for the page */
+.budgetPage {
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+.budgetPage a{
+    text-decoration: none;
+    
+}
+.budgetPage h2{
+    font-family: bebas;
+    font-size: 1.4vw;
+    margin-left: 15%;
+    margin-bottom: 0%;
+    margin-top: 2%;
+}
+.noBudget {
+    margin-left: 41%;
+    font-size: 2vw;
+}
+/* the font for the page */
+.budgetPage p,
+h1 {
+  font-family: bebas;
+}
+.budgetPage h1 {
+  font-size: 3vw;
+  margin-left: 10%;
+}
+
+/* position the button */
+.addBudget {
+  display: inline-block;
+  width: 40%;
+  margin-left: 54.5%;
+}
+
+.selectAndButton{
+    display: grid;
+    width: 90%;
+    margin-left: 10%;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+/* design the add budget button */
+.addBudgetBut {
+  font-size: 1.2vw;
+  font-family: bebas;
+  color: green;
+  background-color: transparent;
+  border: solid 1px;
+  border-color: green;
+  cursor: pointer;
+  transition: 250ms;
+  width: 100%;
+  padding: 6%;
+}
+.addBudgetBut:active {
+    background-color: rgb(240, 240, 240);
+    border: solid 1px green;
+    color: green;
+}
+.addBudgetBut:hover {
+    background-color: green;
+    color: white; 
+}
+
+.budgetPage .chooseCategory {
+    margin-top: 0%;
+    font-size: 1.3vw;
+    display: inline-block;
+    margin-bottom: 0%;
+    width: 20%;
+  }
+
+.budgetPage .chooseCategory select {
+    width: 88%;
+    padding: 3%;
+    font-size: 1.2vw;
+    margin-top: 1%;
+}
+
+/* position total spent and remaining */
+.totalAmountBox p {
+    display: inline-block;
+    font-size: 1.3vw;
+          
+}
+.totalAmountBox {
+    display: flex;
+    margin: 2.5% 7.5% 2.5% 10%;
+    border: solid 1px;
+}
+.totalAmountSpent{
+    margin-left: 15%;
+    
+}
+.totalAmountRemaining{
+    margin-left: 20%;
+    
+}
+.totalIncomebox{
+    margin-left: 5%;
+}
+.totalRemainingBox {
+    display: inline;
+}
+.totalSpentBox {
+    display: inline;
+}
+.totalAmount {
+    min-width: 11.5%;
+}
+.numTotal {
+    min-width: 5%;
+    text-align: end;
+}
+
+/* turns red if totalSpent under 0 */
+#spentRed{
+    color: red;
+}
+#spentGreen{
+    color: green;
+}
+
+/* turns red if totalRemaining under 0 */
+#remainingRed {
+    color: red;
+}
+#remainingGreen {
+    color: green;
+}
+
+/* the design of the small headers */
+.budgetLabels {
+    font-size: 1.5vw;
+}
+.categoryTable {
+    margin-top: 2.5%;
+}
+/* setting the distance between small headers */
+.budgetLabels #category {
+    text-align: end;
+    display: inline-block;
+    margin-left: 15.25%;
+    font-family: bebas;
+}    
+.budgetLabels #expected {
+    text-align: end;
+    display: inline-block;
+    margin-left: 16%;
+    font-family: bebas;
+}  
+.budgetLabels #spent {
+    text-align: end;
+    display: inline-block;
+    margin-left: 15.25%;
+    font-family: bebas;
+}
+.budgetLabels #remaining {
+    text-align: end;
+    display: inline-block;
+    margin-left: 11%;
+    font-family: bebas;
+}
+
+  
+/* making the table */
+.budgetTable {
+    display: grid;
+    width:  87.5%;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    gap: 1%;
+    grid-template-columns: 94% 5%;
+    justify-items: center;
+    align-items: center;
+}
+.budgetInsideTable {
+    border: 1px solid;
+    margin: 0px;
+    padding: 0%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+}
+
+/* setting the titles inside of the table */
+.budgetCategory {
+    display: inline-block;
+    position: relative;
+    left: 5.5%;
+    width: 100%;
+    font-size: 1.5vw;
+    text-align: start;
+    padding-left: 20%;
+}
+
+/* making number and kr stand on line */
+.KrInline {
+    display: inline;
+    width: 100%;
+    padding-left: 35%;
+    ;
+}
+.KrInline p {
+    display: inline-block;
+}
+.budgetExpected {
+    font-size: 1.5vw;
+    min-width: 15%;
+    text-align: end;
+}
+.budgetSpent {
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: end;
+    padding-left: 0%;
+}
+.budgetRemaining {
+    font-size: 1.5vw;
+    min-width: 15%;
+    text-align: end;
+    margin-left: 5%;
+}
+.Kr {
+    font-size: 1.5vw;
+}
+
+/* makes the color of the remaining inside of table green */
+#spentTableGreen {
+    color: green;
+}
+#spentTableRed {
+    color: red;
+}
+
+/* makes the color of the remaining inside of table green */
+#remainingTableGreen {
+    color: green;
+}
+#remainingTableRed {
+    color: red;
+}
+
+/* postion edit expected box */
+.editBudgetBoxParent{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.editBudgetBox {
+    height: 100%;
+    display: grid;
+    gap: 10%;
+    grid-template-rows: 45% 45%;
+}
+
+/* design edit button */
+.editBudget {
+    display: block;
+    font-family: bebas;
+    font-size: 1.2vw;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.25%;
+    background-color: transparent;
+    border: solid 1px green;
+    color: green;
+    transition: 150ms;
+    cursor: pointer;
+}
+.editBudget:active {
+    background-color: rgb(240, 240, 240);
+    border: solid 1px green;
+    color: green;
+}
+.editBudget:hover {
+    background-color: green;
+    color: white;
+}
+
+/* design delete button */
+.deleteBudget {
+    display: block;
+    font-family: bebas;
+    font-size: 1.2vw;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.25%;
+    background-color: transparent;
+    border: solid 1px red;
+    color: red;
+    transition: 150ms;
+    cursor: pointer;
+}
+.deleteBudget:active {
+    background-color: rgb(240, 240, 240);
+    border: solid 1px red;
+    color: red;
+}
+.deleteBudget:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+/* css for add budget page */
+/* margin for page */
+.addBudgetPage {
+    margin-left: 14%;
+    margin-right: 10%; 
+}
+
+/* the font for the page */
+.addBudgetPage p,
+h1, label {
+  font-family: bebas;
+}
+.addBudgetPage label {
+  font-size: 1.8vw;
+}
+.addBudgetPage h1 {
+  font-size: 3vw;
+  margin-left: 26%;
+}
+
+/* design of input */
+.addBudgetPage .basicInput {
+    font-size: 1.2vw;
+    font-family: bebas;
+    color: black;
+    background-color: transparent;
+    border: solid 1px;
+    padding: 1.2%;
+    width: 45%;
+    display: inline-block;
+}
+
+/* position of the form */
+.addBudgetPage form {
+    text-align: center;
+}
+.addBudgetPage label {
+    margin-left: 26.5%;
+}
+.addBudgetPage form input {
+    margin-bottom: 2%;
+}
+.addBudgetPage h1 {
+    margin-bottom: 5%;
+}
+
+/* design of sumbit button */
+.addBudgetPage .submitBudget {
+    display: inline-block;
+    font-size: 1.2vw;
+    font-family: bebas;
+    color: green;
+    background-color: transparent;
+    border: solid 1px;
+    border-color: green;
+    padding: 1.25%;
+    transition: 200ms;
+    cursor: pointer;
+}
+.addBudgetPage .submitBudget:hover {
+    background-color: green;
+    color: white;
+}
+.addBudgetPage .submitBudget:active {
+    background-color: rgb(0, 71, 0);
+    color: white;
+}
+
+.addBudgetPage .colourInput {
+    background-color: transparent;
+    outline: none;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 48.2%;
+    cursor: pointer;
+}
+
+.divider{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 82%;
+    height: 1px;
+}
+
+
+
+
+
+.totalTable{
+    margin-left: 10%;
+    width: 20%;
+    border: 1px solid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-right: 1.5%;
+    margin-right: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    float: left;
+}
+.totalTable th {
+    font-family: bebas;
+    text-align: left;
+    font-size: 1.25vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 2%;
+  }
+.totalTable td {
+    font-family: bebas;
+    text-align: right;
+    font-size: 1.25vw;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+.recommendedBudgetTable{
+    margin-right: 2.75%;
+    width: 65%;
+    border: 1px solid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-right: 1%;
+    float: right;
+    padding: 1%;
+}
+.recommendedBudgetTable .normalHeader {
+    font-family: bebas;
+    text-align: center;
+    font-size: 1vw;
+    padding: 2.5% 1.5% 1.5% 1.5%;
+  }
+.recommendedBudgetTable td {
+    font-family: bebas;
+    text-align: center;
+    font-size: 1vw;
+    padding-bottom: 1.5%;
+    padding-top: 1%;
+}
+.recommendedBudgetTable .headersLeft {
+    font-family: bebas;
+    text-align: start;
+    font-size: 1vw;
+    padding-bottom: 1.5%;
+    padding-top: 1%;
+}
+.recommendedBudgetTable th {
+    font-family: bebas;
+    text-align: center;
+    font-size: 1vw;
+    padding-bottom: 1.5%;
+    padding-top: 1%;
+}
+
+  .valuta{
+      margin-right: 10%;
+  }
+  .pos{
+      color: green;
+  }
+  .neg{
+      color: red;
+  }
+.recommendedBudgetBox #recAmountTotal{
+    font-size: 1.5vw;
+    font-family: bebas;
+    padding-top: 1%;
+    margin-left: 22.5%;
+    padding-top: 2.5%;
+}
+
+/* toggle switch the box */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4.6vw;
+  height: 2.5vw;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* background of the box */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* the circle */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.9vw;
+  width: 1.9vw;
+  left: 7.5%;
+  bottom: 12.5%;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+/* the sliding of the little circle */
+input:checked + .slider:before {
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(105%);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switchBox {
+    margin-left: -37%;
+}
+
+.headers {
+    font-family: bebas;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    padding: 2.5% 5% 2.5% 5%;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey transparent transparent transparent;
+  }
