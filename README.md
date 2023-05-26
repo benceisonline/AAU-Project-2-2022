@@ -1,7 +1,7 @@
 # AAU Project 2
 Personal Budget and Expense Tracker - University Project, Second Semster, 2022
 
--  Fully functional, dynamic budgeting web application made using Node.js, Express, MongoDB, and SceneBuilder
+-  Fully functional, dynamic budgeting web application made using Node.js, Express, and MongoDB
 
 How to use:
 - If you do not have an IDE, install one, eg: Visual Studio Code
